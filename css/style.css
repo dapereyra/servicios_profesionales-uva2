@@ -500,6 +500,7 @@ main {
 }
 
 .about-text button {
+  padding: 15px 35px;
 }
 
 .service-cards {
@@ -715,6 +716,19 @@ main {
 .card-nosotros-botones {
   display: flex;
   flex-direction: column;
+}
+
+.card-nosotros-botones button a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-nosotros-botones button a:hover,
+.card-nosotros-botones button:hover {
+  color: #00bcd4;
+  background-color: #ffffff;
 }
 
 @media (max-width: 768px) {
