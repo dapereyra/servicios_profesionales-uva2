@@ -5,7 +5,7 @@ body {
 main {
     position: relative;
     bottom: 0;
-    background-image: linear-gradient(to bottom, #111111, #1b1b1b, #242424, #2d2d2d, #373737, #373737, #373737, #373737, #2d2d2d, #242424, #1b1b1b, #111111);
+    background-image: linear-gradient(to bottom, #5e5d5d, #5e5c5c, #535252, #494848, #373737, #373737, #373737, #373737, #2d2d2d, #242424, #1b1b1b, #111111);
 }
 
 section#contact {
