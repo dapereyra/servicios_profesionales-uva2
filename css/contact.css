@@ -1,0 +1,152 @@
+body {
+    background-color: #121212;
+}
+
+main {
+    position: relative;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, #111111, #1b1b1b, #242424, #2d2d2d, #373737, #373737, #373737, #373737, #2d2d2d, #242424, #1b1b1b, #111111);
+}
+
+section#contact {
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 47%;
+    line-height: 1.6em;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+    text-align: left;
+}
+
+.container.form,
+.container.office {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 3em;
+}
+
+.container.form {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+h1 { margin-bottom: 1em;}
+
+h2 { margin-top: .25em; margin-bottom: 1em; text-align: center; }
+
+.row {
+    margin-top: .5em ;
+    margin-bottom: .5em ;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    text-align: left;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    text-align: left;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* FORM */
+.col-75:has(input), .col-75:has(textarea) { text-align: right; }
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.row:has(input[type=submit]) { margin-left: 40%;}
+
+input[type=text], textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    width: 80%;
+}
+
+input[type=submit] {
+    padding: 13px 30px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 6px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+input[type=submit]:hover {
+    color: #00bcd4;
+    background-color: #ffffff;
+}
+
+/* OFFICE */
+.address { text-align: left; padding-left: 2em; }
+.address p { margin-bottom: 1em; }
+.office {padding-left: 0; padding-right: 0;}
+.office .map img { width: 100%; }
+
+
+/* Responsive Layout */
+@media screen and (max-width: 1200px) {
+    section#contact {
+        width: 100%;
+        padding: 5em 1em 2em 1em;
+        font-size: 1.2em;
+    }
+
+    .col-25, .col-75 {
+      width: 100%;
+    }
+
+    .col-75:has(input), .col-75:has(textarea) { text-align: center; }
+
+    .col-25:has(label), .row:has(input[type=submit]) {text-align: center;}
+
+    .container.form,
+    .container.office {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container.form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .office .map { text-align: center; margin-bottom: 1em;}
+    .office .map img { width: 80%; }
+
+    .row:has(input[type=submit]) { margin-left: 0;}
+
+    input[type=submit] {
+        padding: 13px 60px;
+    }
+
+}
+
+
