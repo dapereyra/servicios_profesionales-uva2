@@ -695,47 +695,6 @@ main {
   padding: 15px 35px;
 }
 
-.service-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.service-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  max-width: 300px;
-  text-align: left;
-  transition: transform 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-}
-
-.service-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.service-card-content {
-  padding: 20px;
-}
-
-.service-card-content h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.service-card-content p {
-  font-size: 1em;
-  line-height: 1.6;
-}
-
 .cta .btn {
   padding: 10px 20px;
   background-color: #00bcd4;
