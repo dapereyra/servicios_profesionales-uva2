@@ -536,72 +536,6 @@ button:hover {
   color: white;
 }
 
-.services-section {
-  padding: 450px 20px;
-  text-align: center;
-  background: linear-gradient(
-    to top,
-    rgba(3, 85, 117, 0.048),
-    rgba(0, 0, 0, 0.432),
-    rgba(2, 59, 82, 0.178),
-    rgba(3, 85, 117, 0.048)
-  );
-}
-
-.services-title {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.service-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.service-card {
-  background: linear-gradient(
-    to top,
-    rgba(3, 85, 117, 0.048),
-    rgba(0, 0, 0, 0.432),
-    rgba(2, 59, 82, 0.178),
-    rgba(1, 175, 243, 0.048)
-  );
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  max-width: 300px;
-  text-align: left;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.service-card-image img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.service-card-content {
-  padding: 20px;
-  background-image: url("../img/fondo_header_1.jpg");
-}
-
-.service-card-content h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.service-card-content p {
-  font-size: 1em;
-  line-height: 1.6;
-}
-
 .contact-section {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.479));
   padding: 450px 20px;
@@ -977,6 +911,162 @@ main {
 }
 
 @media (max-width: 768px) {
+    .card {
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
+.service-hero {
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 1rem 5%;
+}
+
+.service-hero .service-hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4rem 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    max-width: 90%;
+    margin: 2rem auto 4rem auto;
+}
+
+.services-section {
+    padding: 15rem 0 2rem;
+    text-align: center;
+    background: linear-gradient(to top,  rgba(3, 85, 117, 0.048),rgba(0, 0, 0, 0.432), rgba(2, 59, 82, 0.178),  rgba(3, 85, 117, 0.048));
+}
+
+.services-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between; 
+    padding: 1rem 10%;
+    flex-wrap: wrap; 
+    width: 100%;
+}
+
+.service-card {
+    background: linear-gradient(to top,  rgba(3, 85, 117, 0.048),rgba(0, 0, 0, 0.432), rgba(2, 59, 82, 0.178),  rgba(1, 175, 243, 0.048));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    
+}
+
+.service-card-content {
+    padding: 20px;
+    background-image: url('../img/fondo_header_1.jpg');
+    text-align: center;
+    min-height: 200px;
+ 
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-10px);
+}
+
+.service-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.service-card-content p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.service-testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #333;
+    padding: 1rem 4rem;
+}
+
+.service-testimonial {
+    background-color: #444;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    padding: 1rem 2rem;
+}
+
+.service-testimonial-content {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.service-testimonial-content p {
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+.service-testimonial-content strong {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .service-cards {
+        justify-content: center;
+    }
+    .service-card {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-testimonials {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .service-testimonial {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        padding: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+    .service-hero{
+        padding: 0;
+    }
+}
+
   /* .card {
     width: 100%;
     margin-right: 0;
