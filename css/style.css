@@ -8,6 +8,18 @@ body {
   font-family: Arial, sans-serif;
 }
 
+button {
+  padding: 15px 0;
+  border: none;
+  margin: 5px;
+  box-shadow: 2px 4px 8px rgba(253, 253, 253, 0.4);
+  border-radius: 15px;
+  background-color: #00bcd4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -487,6 +499,9 @@ main {
   line-height: 1.6;
 }
 
+.about-text button {
+}
+
 .service-cards {
   display: flex;
   flex-wrap: wrap;
@@ -700,18 +715,6 @@ main {
 .card-nosotros-botones {
   display: flex;
   flex-direction: column;
-}
-
-.card-nosotros-botones button {
-  padding: 15px 0;
-  border: none;
-  margin: 5px;
-  box-shadow: 2px 4px 8px rgba(253, 253, 253, 0.4);
-  border-radius: 15px;
-  background-color: #00bcd4;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
 }
 
 @media (max-width: 768px) {
