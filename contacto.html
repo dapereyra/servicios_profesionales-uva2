@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HighTech</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
     <header class="header">
@@ -34,9 +35,65 @@
     </header>
 
     <main>
-      <section id="contact" class="contact-section">
-        <div class="contact-container"></div>
+      <section id="contact">
+        <h1>Contacto</h1>
+        <div class="container bg-light">
+          En High Tech queremos ayudarte a llevar tu visión a la realidad. Ya sea que necesites un sitio web completamente nuevo, una renovación de tu página actual, o servicios de diseño gráfico, estamos aquí para asistirte.
+        </div>
+        <div class="container form bg-medium">
+            <h2>Consultas</h2>
+            <form>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Nombre y Apellido</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="fullName">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Correo Electrónico</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="email" name="email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="phone">Teléfono</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="phone" name="phone">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Consulta</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject"style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                  <input type="submit" class="button" value="Enviar">
+              </div>
+            </form>
+        </div>
+        <div class="container office">
+          <h2>Nuestras Oficinas</h2>
+          <div class="row">
+            <div class="col-50 map">
+              <a href=""><img src="img/nuestras-oficinas.png" alt="Mapa"></a>
+            </div>
+            <div class="col-50 address">
+              <p><b>Dirección:</b> Lima 757 - C1073AAO, Ciudad Autónoma de Buenos Aires</p>
+              <p><b>Horarios de Atención:</b> Lunes a Viernes de 9 a 18hs</p>
+            </div>
+          </div>  
+        </div>
       </section>
+
     </main>
 
     <footer>
