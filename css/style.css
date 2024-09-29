@@ -1053,6 +1053,7 @@ main {
     margin-bottom: 20px;
   } */
 
+
 @media (max-width: 1000px) {
   .about-content {
     flex-direction: column-reverse;
