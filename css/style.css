@@ -14,7 +14,7 @@ h1 {
 }
 
 .bg-light {
-  background-color: #3B3939;
+  background-color: #3b3939;
 }
 
 .bg-medium {
@@ -192,7 +192,13 @@ button:hover {
 }
 
 .support-section {
-  background: linear-gradient(to top, rgba(3, 85, 117, 0.048), rgba(0, 0, 0, 0.432), rgba(2, 59, 82, 0.178), rgba(3, 85, 117, 0.048));
+  background: linear-gradient(
+    to top,
+    rgba(3, 85, 117, 0.048),
+    rgba(0, 0, 0, 0.432),
+    rgba(2, 59, 82, 0.178),
+    rgba(3, 85, 117, 0.048)
+  );
   padding: 150px 20px 80px;
   color: white;
   text-align: center;
@@ -847,7 +853,8 @@ main {
   margin-bottom: 20px;
 }
 
-.service-cards {
+.service-cards,
+.portfolio-cards {
   display: flex;
   justify-content: space-between;
   padding: 1rem 10%;
@@ -855,7 +862,14 @@ main {
   width: 100%;
 }
 
-.service-card {
+.portfolio-cards {
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.service-card,
+.portfolio-card {
   background: linear-gradient(
     to top,
     rgba(3, 85, 117, 0.048),
@@ -872,11 +886,16 @@ main {
   height: 100%;
 }
 
-.service-card-content {
+.service-card-content,
+.portfolio-card-content {
   padding: 20px;
   background-image: url("../img/fondo_header_1.jpg");
   text-align: center;
   min-height: 200px;
+}
+
+.portfolio-card-content button {
+  padding: 10px;
 }
 
 .service-card:hover {
@@ -891,12 +910,14 @@ main {
   object-fit: cover;
 }
 
-.service-card-content h3 {
+.service-card-content h3,
+.portfolio-card-content h3 {
   font-size: 1.5em;
   margin-bottom: 1rem;
 }
 
-.service-card-content p {
+.service-card-content p,
+.portfolio-card-content p {
   font-size: 1em;
   line-height: 1.6;
 }
@@ -972,7 +993,6 @@ main {
     margin-right: 0;
     margin-bottom: 20px;
   } */
-
 
 @media (max-width: 1000px) {
   .about-content {
